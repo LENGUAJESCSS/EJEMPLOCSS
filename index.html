@@ -5,6 +5,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <!--Incluimos Boostrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <div class="topnav">
@@ -15,25 +23,20 @@
 
     <h2>CSS Template</h2>
     <p>A topnav, content and a footer.</p>
-    <form action="/action_page.php" class="formulario">
-      <label for="uname">Username:</label>
-      <input
-        type="text"
-        id="uname"
-        placeholder="Enter username"
-        name="uname"
-        required
-      />
-
-      <label for="pwd">Password:</label>
-      <input
-        type="password"
-        id="pwd"
-        placeholder="Enter password"
-        name="pswd"
-        required
-      />
-      <button type="submit">Submit</button>
+    <form action="/action_page.php" class="was-validated">
+      <div class="mb-3 mt-3">
+		  <label for="uname" class="form-label">Username:</label>
+		  <input type="text" id="uname" placeholder="Enter username" name="uname" required class="form-control"/>
+		  <div class="valid-feedback">usuario correcto.</div>
+		  <div class="invalid-feedback">Por favor rellene su usuario.</div>
+	<div>
+    <div class="mb-3 mt-3">
+      <label for="pwd" class="form-label">Password:</label>
+      <input type="password" id="pwd" placeholder="Enter password" name="pswd" class="form-control" required/>
+      <div class="valid-feedback">contraseña correcta.</div>
+      <div class="invalid-feedback">Por favor rellene su contraseña.</div>
+    </div>
+      <button type="submit" class="btn btn-outline-success">Submit</button>
     </form>
     <a href="#">enlace de prueba</a>
 
